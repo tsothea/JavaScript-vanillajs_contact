@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Contact List</title>
+    <script type="text/javascript" src="js/index.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body onload="loadData()">
+    <div class="container">
+        <form method="post" name="contact" id="frm-contact-id">
+            <input type="hidden" name="id" value="" id="data_id" />
+            <div class="row">
+                <div class="col-sm-12">
+                    <input type="text" name="name" placeholder="Name" class="form-control" id="name_id" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <input type="text" name="phone" placeholder="Phone" class="form-control" id="phone_id" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <input type="text" name="email" placeholder="Email" class="form-control" id="email_id" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <input type="button" name="btn-submit" value="Save" class="btn btn-success btn-full" id="btnsubmit_id" onclick="saveData()" />
+                </div>
+            </div>
+            <div class="error" id="errors_id"></div>
+        </form>
+    </div>
+    <br>
+    <table width="100%" class="table" id="table_id">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Date</th>
+            <th width="220"></th>
+        </tr>
+    </table>
+</body>
+</html> 
